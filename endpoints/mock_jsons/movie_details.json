@@ -1,34 +1,38 @@
 {
-    "id": 550,                  // movie id
-    "trailer": "6JnN1DmbqoU",   // de eerste video met type:trailer en site:Youtube uit TMDB get videos
-    "logo": "een afbeelding url",    // de eerste afbeelding van fanart.tv (Geen prioriteit)
-    "genres": [                 // Kunnen meerdere genres zijn
-        "Drama",
+    "id": 718930,
+    "trailer": "0IOsk2Vlc4o",
+    "logo": "een afbeelding url",
+    "genres": [
         "Action",
+        "Comedy",
+        "Thriller"
     ],
-    "title": "Fight Club",
-    "description": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",         // movie overview
-    "keywords": [               // altijd de eerste 3 uit TMDB movie get keywords
-        "based on novel or book",
-        "support group",
+    "title": "Bullet Train",
+    "description": "Unlucky assassin Ladybug is determined to do his job peacefully after one too many gigs gone off the rails. Fate, however, may have other plans, as Ladybug's latest mission puts him on a collision course with lethal adversaries from around the globe—all with connected, yet conflicting, objectives—on the world's fastest train.",
+    "keywords": [
+        "japan",
+        "assassin",
         "dual identity"
-    ]
-    "release_year": 1999,       // het jaar van de "release_date" uit TMDB movie
-    "runtime": 139,             // film tijdsduur
-    "age_certificate": 16,      // de "certification" van  "iso_3166_1": "US" TMDB movie get release dates
-    "actors": [ // array met name van de cast (eerste max. 10) die een key "character" heeft uit TMDB movie get credits
+    ],
+    "release_year": 2022,
+    "runtime": 127,
+    "age_certificate": "12",
+    "actors": [
         "Brad Pitt",
-        "Edward Norton",
-        "Helena Bonham Carter",
-        "Meat Loaf"
-        // meer namen
+        "Joey King",
+        "Aaron Taylor-Johnson",
+        "Brian Tyree Henry",
+        "Andrew Koji",
+        "Hiroyuki Sanada",
+        "Michael Shannon",
+        "Bad Bunny",
+        "Sandra Bullock",
+        "Zazie Beetz"
     ],
-    "writers": [ // array met name van de cast met "job":"screenplay" uit TMDB movie get credits
-        "Een Naam",
-        // etc...
+    "writers": [
+        "Zak Olkewicz"
     ],
-    "directors": [ // array met name van de cast met "job":"director" uit TMDB movie get credits
-        "Een Naam",
-        // etc...
+    "directors": [
+        "David Leitch"
     ]
 }
