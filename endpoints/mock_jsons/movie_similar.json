@@ -1,0 +1,16 @@
+{
+    "similar": [
+        {
+            "backdrop_path": "/heKW7bP7m2MtvQaGXtH13LfQ8Q8.jpg",    // movie afbeelding
+            "description": "lorem ipsum",                           // movie overview
+            "id": 2926,                   // movie id
+            "title": "Suicide Squad",
+            "runtime": 139,               // film tijdsduur
+            "release_year": 2020,         // het jaar van de "release_date" uit TMDB movie
+            "age_certificate": 18,        // de "certification" van "iso_3166_1": "US" TMDB movie get release dates
+        },
+        {
+            // meer movies (max 6)
+        }
+    ]
+}

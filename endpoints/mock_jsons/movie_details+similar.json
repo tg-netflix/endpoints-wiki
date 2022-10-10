@@ -1,0 +1,63 @@
+{
+    "id": 550,
+    "trailer": "6JnN1DmbqoU",
+    "logo": "een afbeelding url",
+    "genres": [
+        "Drama",
+        "Action",
+    ],
+    "title": "Fight Club",
+    "description": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+    "keywords": [
+        "based on novel or book",
+        "support group",
+        "dual identity"
+    ],
+    "release_year": 1999,
+    "runtime": 139,
+    "age_certificate": 16,
+    "actors": [
+        "Brad Pitt",
+        "Edward Norton",
+        "Helena Bonham Carter",
+        "Meat Loaf"
+    ],
+    "writers": [
+        "Een Naam",
+    ],
+    "directors": [
+        "Een Naam",
+    ],
+    "similar": [
+        {
+            "backdrop_path": "/heKW7bP7m2MtvQaGXtH13LfQ8Q8.jpg",
+            "description": "lorem ipsum",
+            "id": 2926,
+            "title": "Suicide Squad",
+            "runtime": 139,
+            "release_year": 2020,
+            "age_certificate": 18,
+        },
+        {
+            "backdrop_path": "/heKW7bP7m2MtvQaGXtH13LfQ8Q8.jpg",
+            "description": "lorem ipsum",
+            "id": 2926,
+            "title": "Suicide Squad",
+            "runtime": 139,
+            "release_year": 2020,
+            "age_certificate": 18,
+        },
+        {
+            "backdrop_path": "/heKW7bP7m2MtvQaGXtH13LfQ8Q8.jpg",
+            "description": "lorem ipsum",
+            "id": 2926,
+            "title": "Suicide Squad",
+            "runtime": 139,
+            "release_year": 2020,
+            "age_certificate": 18,
+        },
+        {
+            // meer movies (max 6)
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "id": 550,                  // movie id
+    "trailer": "6JnN1DmbqoU",   // de eerste video met type:trailer en site:Youtube uit TMDB get videos
+    "logo": "een afbeelding url",    // de eerste afbeelding van fanart.tv (Geen prioriteit)
+    "genres": [                 // Kunnen meerdere genres zijn
+        "Drama",
+        "Action",
+    ],
+    "title": "Fight Club",
+    "description": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",         // movie overview
+    "keywords": [               // altijd de eerste 3 uit TMDB movie get keywords
+        "based on novel or book",
+        "support group",
+        "dual identity"
+    ]
+    "release_year": 1999,       // het jaar van de "release_date" uit TMDB movie
+    "runtime": 139,             // film tijdsduur
+    "age_certificate": 16,      // de "certification" van  "iso_3166_1": "US" TMDB movie get release dates
+    "actors": [ // array met name van de cast (eerste max. 10) die een key "character" heeft uit TMDB movie get credits
+        "Brad Pitt",
+        "Edward Norton",
+        "Helena Bonham Carter",
+        "Meat Loaf"
+        // meer namen
+    ],
+    "writers": [ // array met name van de cast met "job":"screenplay" uit TMDB movie get credits
+        "Een Naam",
+        // etc...
+    ],
+    "directors": [ // array met name van de cast met "job":"director" uit TMDB movie get credits
+        "Een Naam",
+        // etc...
+    ]
+}
