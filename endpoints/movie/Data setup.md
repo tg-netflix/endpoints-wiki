@@ -1,5 +1,15 @@
 # **Endpoint /movie**
 
+<br>
+
+| Links naar mock JSONs | Wordt gebruikt bij |
+|-|-|
+|[Movie Details](./movie_details.mock.json)| Kleine + grote modal vanaf moviecard|
+|[Movie Similar](./movie_similar.mock.json)| Grote modal vanaf kleine modal|
+|[Movie Details + Similar](movie_details_similar.mock.json)| Grote modal vanaf banner |
+
+<br>
+
 ## Wordt gebruikt voor:
 
 - ## Kleine modal + Grote modal vanaf movie card:

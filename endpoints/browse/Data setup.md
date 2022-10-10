@@ -1,5 +1,14 @@
 # **Endpoint /browse**
 
+<br>
+
+| Links naar mock JSONs | Wordt gebruikt bij |
+|-|-|
+|[Browse Categories + Banner](./browse_categories_banner.mock.json)| Banner en eerste 3 lanes|
+|[Browse Categories](./browse_categories.mock.json)| Overige movie lanes & grid view|
+
+<br>
+
 ## Wordt gebruikt voor:
 <br>
 

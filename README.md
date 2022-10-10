@@ -1,9 +1,9 @@
 # Netflix Clone Endpoints $Wiki$
 
-| Endpoint data structuur ||
+| Endpoints | Data |
 |-|-
-[**/browse**](/endpoints/browse/Data%20setup.md "Browse endpoint data structuur") | film lijsten en banner opvragen
-[**/movie**](/endpoints/movie/Data%20setup.md "Movie endpoint data structuur") | film details opvragen
+[**/browse**](/endpoints/browse "Browse endpoint data structuur") | Movie lijsten en banner |
+[**/movie**](/endpoints/movie "Movie endpoint data structuur") | Movie details en similar movies |
 
 <br>
 
