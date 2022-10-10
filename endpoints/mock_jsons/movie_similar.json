@@ -1,16 +1,49 @@
 {
-    "similar": [
-        {
-            "backdrop_path": "/heKW7bP7m2MtvQaGXtH13LfQ8Q8.jpg",    // movie afbeelding
-            "description": "lorem ipsum",                           // movie overview
-            "id": 2926,                   // movie id
-            "title": "Suicide Squad",
-            "runtime": 139,               // film tijdsduur
-            "release_year": 2020,         // het jaar van de "release_date" uit TMDB movie
-            "age_certificate": 18,        // de "certification" van "iso_3166_1": "US" TMDB movie get release dates
-        },
-        {
-            // meer movies (max 6)
-        }
-    ]
+  "similar": [
+    {
+      "backdrop_path": "/5PJjktleOWUlIPJK3RdvjxFAMhh.jpg",
+      "description": "In war-torn Colonial America, in the midst of a bloody battle between British, the French and Native American allies, Cora Munro, the aristocratic daughter of a British Colonel and her party are captured by a group of Huron warriors. Fortunately, a group of three Mohican trappers, including Hawkeye, a rugged frontiersman and the adopted son of the Mohicans comes to their rescue. A passionate romance soon blossoms between Cora and Hawkeye, but many forces test their love as they continue to journey through the Frontier.",
+      "id": 9361,
+      "title": "The Last of the Mohicans",
+      "runtime": 139,
+      "release_year": 1992,
+      "age_certificate": 18
+    },
+    {
+      "backdrop_path": "/zmVq7y63z8NewluK7MUBfTxuyvD.jpg",
+      "description": "After high school slacker Ferris Bueller successfully fakes an illness in order to skip school for the day, he goes on a series of adventures throughout Chicago with his girlfriend Sloane and best friend Cameron, all the while trying to outwit his wily school principal and fed-up sister.",
+      "id": 9377,
+      "title": "Ferris Bueller's Day Off",
+      "runtime": 139,
+      "release_year": 1986,
+      "age_certificate": 16
+    },
+    {
+      "backdrop_path": "/poDeoxP4OSweHvOmrkVcaqZAOBk.jpg",
+      "description": "Veteran Secret Service agent Frank Horrigan is a man haunted by his failure to save President Kennedy while serving protection detail in Dallas. Thirty years later, a man calling himself \"Booth\" threatens the life of the current President, forcing Horrigan to come back to protection detail to confront the ghosts from his past.",
+      "id": 9386,
+      "title": "In the Line of Fire",
+      "runtime": 139,
+      "release_year": 1993,
+      "age_certificate": "PG"
+    },
+    {
+      "backdrop_path": "/y319VH0gIFie6KEO5L4nHhxxQUw.jpg",
+      "description": "Forensic psychologist Alex Cross travels to North Carolina and teams with escaped kidnap victim Kate McTiernan to hunt down \"Casanova,\" a serial killer who abducts strong-willed women and forces them to submit to his demands. The trail leads to Los Angeles, where the duo discovers that the psychopath may not be working alone.",
+      "id": 9437,
+      "title": "Kiss the Girls",
+      "runtime": 139,
+      "release_year": 1997,
+      "age_certificate": "R"
+    },
+    {
+      "backdrop_path": "/9AdRUGOCia8XUqGFvVaENsSfvrX.jpg",
+      "description": "An African prince decides it’s time for him to find a princess... and his mission leads him and his most loyal friend to Queens, New York. In disguise as an impoverished immigrant, the pampered prince quickly finds himself a new job, new friends, new digs, new enemies and lots of trouble.",
+      "id": 9602,
+      "title": "Coming to America",
+      "runtime": 130,
+      "release_year": 1988,
+      "age_certificate": "6+"
+    }
+  ]
 }
