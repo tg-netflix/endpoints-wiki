@@ -43,7 +43,7 @@
             "title": "The Last of the Mohicans",
             "runtime": 139,
             "release_year": 1992,
-            "age_certificate": 18
+            "age_certificate": "18"
         },
         {
             "backdrop_path": "/zmVq7y63z8NewluK7MUBfTxuyvD.jpg",
@@ -52,7 +52,7 @@
             "title": "Ferris Bueller's Day Off",
             "runtime": 139,
             "release_year": 1986,
-            "age_certificate": 16
+            "age_certificate": "16"
         },
         {
             "backdrop_path": "/poDeoxP4OSweHvOmrkVcaqZAOBk.jpg",
@@ -79,7 +79,7 @@
             "title": "Coming to America",
             "runtime": 130,
             "release_year": 1988,
-            "age_certificate": "6+"
+            "age_certificate": "6"
         }
     ]
 }
