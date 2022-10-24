@@ -79,7 +79,8 @@
             "id": 297761,                 // movie id
             "logo": "?",                  // de eerste afbeelding van fanart.tv
             "title": "Suicide Squad",     // (niet original_title! Deze is in andere talen)
-            "trailer": "6JnN1DmbqoU"      // de eerste video met type:trailer en site:Youtube uit TMDB get videos
+            "trailer": "6JnN1DmbqoU",     // de eerste video met type:trailer en site:Youtube uit TMDB get videos
+            "age_certificate": "12"       // de "certification" van  "iso_3166_1": "US" TMDB movie get release dates
         }
     ```
     <br>
@@ -224,7 +225,8 @@
             "id": 297761,
             "logo": "?",
             "title": "Suicide Squad",
-            "trailer": "6JnN1DmbqoU"
+            "trailer": "6JnN1DmbqoU",
+            "age_certificate": "12"
         },
         "categories":[
             {
