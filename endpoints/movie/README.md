@@ -4,9 +4,11 @@
 
 | Links naar mock JSONs | Wordt gebruikt bij |
 |-|-|
-|[Movie Details](./movie_details.mock.json)| Kleine + grote modal vanaf moviecard|
-|[Movie Similar](./movie_similar.mock.json)| Grote modal vanaf kleine modal|
+|[Movie Details](./movie_details.mock.json)| Kleine + grote modal vanaf moviecard |
 |[Movie Details + Similar](movie_details_similar.mock.json)| Grote modal vanaf banner |
+<!-- |[Movie Similar](#)| Grote modal vanaf kleine modal| -->
+
+ℹ️ <a id="noSimilar"></a><ins>Details is niet meer optioneel; similar kan niet meer apart worden opgrvraagd</ins>
 
 <br>
 
@@ -20,7 +22,7 @@
 
     **Tweede request** <sup>* (Wordt opgevraagd wanneer de gebruiker klikt op de "more info" knop in de kleine modal)</sup>
 
-    - Similar movies op basis van de doorgegeven movie id.
+    - Similar movies op basis van de doorgegeven movie id. [Details worden nogmaals meegestuurd](#endpoint-movie "❌Details is niet meer optioneel; similar kan niet meer apart worden opgrvraagd")
 
     <br>
 
@@ -32,26 +34,27 @@
 
     <br>
 
-# Parmeters: (`nog bespreken`)
+# Parmeters:
 
 - `Id` - Geeft movie id door.
-- `Details` - Vraagt film details op voor de modals.
 - `Similar` - Vraagt similar movies aan. Altijd alleen van page 1 (max 6 films).
+    ~~<li style="list-style-type: '❌ '">
+    `Details`-Vraagt film details op voor de modals~~ [Wordt altijd meegestuurd](#endpoint-movie "❌Details is niet meer optioneel; similar kan niet meer apart worden opgrvraagd")</li>
+<br>
 
 | Variable | Data type || Standaard waarde |
 -|-|-|-:
 | `id`      | integer | verplicht | -
-| `details` | boolean | optioneel | true
 | `similar` | boolean | optioneel | false
+<!-- | `details` ❌ | boolean | optioneel | true -->
 
 <br>
 
-## json per parameter:
 
-- ## Details
-    Voorbeeld: `details=true`
+## Standaard response voorbeeld
 
-    <br>
+#### URL voorbeeld
+> `netflixbackend.com/movie/550`
 
 ```json
 {
@@ -63,7 +66,7 @@
         "Action",
     ],
     "title": "Fight Club",
-    "description": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",         // movie overview
+    "overview": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",         // movie overview
     "keywords": [               // altijd de eerste 3 uit TMDB movie get keywords
         "based on novel or book",
         "support group",
@@ -86,114 +89,111 @@
     "directors": [ // array met name van de cast met "job":"director" uit TMDB movie get credits
         "Een Naam",
         // etc...
-    ]
+    ],
+    "similar": null
 }
 ```
 
 <br>
 
-- ## Similar
+## json per parameter:
+
+- ### Similar
     Voorbeeld: `similar=true`
 
-    <br>
-
-```json
-{
-    "similar": [
-        {
-            "backdrop_path": "/heKW7bP7m2MtvQaGXtH13LfQ8Q8.jpg",    // movie afbeelding
-            "description": "lorem ipsum",                           // movie overview
-            "id": 2926,                   // movie id
-            "title": "Suicide Squad",
-            "runtime": 139,               // film tijdsduur
-            "release_year": 2020,         // het jaar van de "release_date" uit TMDB movie
-            "age_certificate": 18,        // de "certification" van "iso_3166_1": "US" TMDB movie get release dates
-        },
-        {
-            // meer movies (max 6)
-        }
-    ]
-}
-```
+    ```json
+    {
+        "similar": [
+            {
+                "backdrop_path": "/heKW7bP7m2MtvQaGXtH13LfQ8Q8.jpg",    // movie afbeelding
+                "overview": "lorem ipsum",                           // movie overview
+                "id": 2926,                   // movie id
+                "title": "Suicide Squad",
+                "runtime": 139,               // film tijdsduur
+                "release_year": 2020,         // het jaar van de "release_date" uit TMDB movie
+                "age_certificate": 18,        // de "certification" van "iso_3166_1": "US" TMDB movie get release dates
+            },
+            {
+                // meer movies (max 6)
+            }
+        ]
+    }
+    ```
 
 <br>
 
-# Responce per request:
+## Response per request:
 
-- ## Request grote modal vanaf banner
+- ### Request volledige modal data
 
-### URL voorbeeld
-> `netflixbackend.com/movie?id=550&similar=true`
+    #### URL voorbeeld
+    > `netflixbackend.com/movie/550?similar=true`
 
-of
-
-> `netflixbackend.com/movie?id=550&details=true&similar=true`
-
-```json
-{
-    "id": 550,
-    "trailer": "6JnN1DmbqoU",
-    "logo": "een afbeelding url"
-    "genres": [
-        "Drama",
-        "Action",
-    ],
-    "title": "Fight Club",
-    "description": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
-    "keywords": [
-        "based on novel or book",
-        "support group",
-        "dual identity"
-    ],
-    "release_year": 1999,
-    "runtime": 139,
-    "age_certificate": 16,
-    "actors": [
-        "Brad Pitt",
-        "Edward Norton",
-        "Helena Bonham Carter",
-        "Meat Loaf"
-    ],
-    "writers": [
-        "Een Naam",
-    ],
-    "directors": [
-        "Een Naam",
-    ],
-    "similar": [
-        {
-            "backdrop_path": "/heKW7bP7m2MtvQaGXtH13LfQ8Q8.jpg",
-            "description": "lorem ipsum",
-            "id": 2926,
-            "title": "Suicide Squad",
-            "runtime": 139,
-            "release_year": 2020,
-            "age_certificate": 18,
-        },
-        {
-            "backdrop_path": "/heKW7bP7m2MtvQaGXtH13LfQ8Q8.jpg",
-            "description": "lorem ipsum",
-            "id": 2926,
-            "title": "Suicide Squad",
-            "runtime": 139,
-            "release_year": 2020,
-            "age_certificate": 18,
-        },
-        {
-            "backdrop_path": "/heKW7bP7m2MtvQaGXtH13LfQ8Q8.jpg",
-            "description": "lorem ipsum",
-            "id": 2926,
-            "title": "Suicide Squad",
-            "runtime": 139,
-            "release_year": 2020,
-            "age_certificate": 18,
-        },
-        {
-            // meer movies (max 6)
-        }
-    ]
-}
-```
+    ```json
+    {
+        "id": 550,
+        "trailer": "6JnN1DmbqoU",
+        "logo": "een afbeelding url"
+        "genres": [
+            "Drama",
+            "Action",
+        ],
+        "title": "Fight Club",
+        "overview": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+        "keywords": [
+            "based on novel or book",
+            "support group",
+            "dual identity"
+        ],
+        "release_year": 1999,
+        "runtime": 139,
+        "age_certificate": 16,
+        "actors": [
+            "Brad Pitt",
+            "Edward Norton",
+            "Helena Bonham Carter",
+            "Meat Loaf"
+        ],
+        "writers": [
+            "Een Naam",
+        ],
+        "directors": [
+            "Een Naam",
+        ],
+        "similar": [
+            {
+                "backdrop_path": "/heKW7bP7m2MtvQaGXtH13LfQ8Q8.jpg",
+                "overview": "lorem ipsum",
+                "id": 2926,
+                "title": "Suicide Squad",
+                "runtime": 139,
+                "release_year": 2020,
+                "age_certificate": 18,
+            },
+            {
+                "backdrop_path": "/heKW7bP7m2MtvQaGXtH13LfQ8Q8.jpg",
+                "overview": "lorem ipsum",
+                "id": 2926,
+                "title": "Suicide Squad",
+                "runtime": 139,
+                "release_year": 2020,
+                "age_certificate": 18,
+            },
+            {
+                "backdrop_path": "/heKW7bP7m2MtvQaGXtH13LfQ8Q8.jpg",
+                "overview": "lorem ipsum",
+                "id": 2926,
+                "title": "Suicide Squad",
+                "runtime": 139,
+                "release_year": 2020,
+                "age_certificate": 18,
+            },
+            {
+                // meer movies (max 6)
+            }
+        ]
+    }
+    ```
 
  <br>
 
