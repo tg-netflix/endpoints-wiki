@@ -4,6 +4,7 @@
 |-|-
 [**/browse**](/endpoints/browse "Browse endpoint data structuur") | Movie lijsten en banner |
 [**/movie**](/endpoints/movie "Movie endpoint data structuur") | Movie details en similar movies |
+[**/user**](/endpoints/user/ "Movie endpoint data structuur") | Liked movies and movie suggestions |
 
 <br>
 
